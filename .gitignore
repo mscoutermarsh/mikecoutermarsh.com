@@ -11,6 +11,12 @@ spec/reports
 test/tmp
 test/version_tmp
 tmp
+parse/*
+parse/
+crushlist/
+crushlist
+crushlist/*
+clist.html
 
 # YARD artifacts
 .yardoc
