@@ -1,5 +1,8 @@
 *.gem
+joe.html
 *.rbc
+joe
+joe/
 .bundle
 .config
 coverage
