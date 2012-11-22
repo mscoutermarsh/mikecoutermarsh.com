@@ -1,0 +1,53 @@
+!!!
+%html{:lang => "en"}
+  %head
+    %meta{:content => "text/html; charset=ISO-8859-1", "http-equiv" => "Content-Type"}
+      %title Mike Coutermarsh
+      %link{:href => "bootstrap.min.css", :rel => "stylesheet", :type => "text/css"}     
+      :css
+        body{
+        	background-image:url('shattered.png');
+        	background-repeat:repeat-y repeat-x;
+        }
+  %body
+    .hero-unit{:style => "background: none;"}
+      %h1 Mike Coutermarsh
+      %p Hello World
+      %p
+        %code
+          I like:
+          %font{:color => "#7f7f7f"} Web Apps, API's, Ruby, Rails, Linux, Heroku
+        %br
+        %code
+          Working on:
+          = succeed "," do
+            %a{:href => "http://taskk.it"} Taskk
+          %a{:href => "http://cardscan.me"} CardScan.Me
+        %br
+        %code
+          Find me on:
+          = succeed "," do
+            %a{:href => "http://github.com/mscoutermarsh"} Github
+          = succeed "," do
+            %a{:href => "http://www.linkedin.com/in/coutermarsh"} LinkedIn
+          %a{:href => "https://twitter.com/mscccc"} Twitter
+        %br
+        %code
+          Email:
+          %a{:href => "mailto:coutermarsh.mike@gmail.com"} coutermarsh.mike@gmail.com
+    :javascript
+      var GoSquared = {};
+      GoSquared.acct = "GSN-863530-U";
+      (function(w){
+        function gs(){
+          w._gstc_lt = +new Date;
+          var d = document, g = d.createElement("script");
+          g.type = "text/javascript";
+          g.src = "//d1l6p2sc9645hc.cloudfront.net/tracker.js";
+          var s = d.getElementsByTagName("script")[0];
+          s.parentNode.insertBefore(g, s);
+        }
+        w.addEventListener ?
+          w.addEventListener("load", gs, false) :
+          w.attachEvent("onload", gs);
+      })(window);
